@@ -1,14 +1,13 @@
-
+import React, {useState} from 'react';
 import './App.css';
+import "./component/Button_counter/button__counter"
+import Button_counter from "./component/Button_counter/button__counter";
 
 let array = ["profile","message","news","setting"]
 let saveTag = array.map(item => (<div><a href='#'>{item}</a></div>)) 
 console.log(saveTag)
 
 function App(props) {
-
-
-
 
   return (
     <div className="app_wrapper">
@@ -19,6 +18,7 @@ function App(props) {
       <nav className='app_nav'>
         
         {saveTag}
+       
         
         
       </nav>
@@ -26,8 +26,12 @@ function App(props) {
       <div className='app_content'>
         <textarea className='area'></textarea>
         <button className='btn_input'>+</button>
+
+       
+        <Button_counter/>
       </div>
      
+      
     </div>
   );
 }
