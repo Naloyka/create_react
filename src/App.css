@@ -33,8 +33,9 @@ background-color: beige;
 }
 
 .app_content {
+  padding: 30px;
 grid-area: content;
-background-color: azure;
+background-color: rgb(191, 223, 204);
 }
 
 .app_header img {
@@ -51,4 +52,28 @@ a {
 .btn_input {
   display: block;
   width: 170px;
+}
+
+.fidback__form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  gap: 10px;
+
+}
+
+.name__inpunt {
+  display: block;
+}
+
+.fidback__select{
+  display: block;
+}
+
+.form__btn {
+  display: block;
 }
